@@ -17,7 +17,7 @@ def is_enabled(value, default):
 
 class Config(object):
     # Bot Information 
-    TECH_VJ_BOT_TOKEN1 = os.environ.get("TECH_VJ_BOT_TOKEN1", "")
+    TECH_VJ_BOT_TOKEN1 = os.environ.get("TECH_VJ_BOT_TOKEN", "")
     TECH_VJ_BOT_TOKEN2 = os.environ.get("TECH_VJ_BOT_TOKEN2", "")
     TECH_VJ_BOT_USERNAME1 = os.environ.get("TECH_VJ_BOT_USERNAME1", "@JBMultiusage_bot") # Bot username without @.
     TECH_VJ_BOT_USERNAME2 = os.environ.get("TECH_VJ_BOT_USERNAME2", "@URLUPLOADERDOWNLOADu_BOT") # Bot username without @.
