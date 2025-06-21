@@ -20,7 +20,7 @@ bot1 = Tech_VJ(
     bot_token=Config.TECH_VJ_BOT_TOKEN1,
     api_id=Config.TECH_VJ_API_ID,
     api_hash=Config.TECH_VJ_API_HASH,
-    plugins=plugins
+    plugins=dict(root="plugins_bot1")
 )
 
 bot2 = Tech_VJ(
@@ -28,9 +28,8 @@ bot2 = Tech_VJ(
     bot_token=Config.TECH_VJ_BOT_TOKEN2,
     api_id=Config.TECH_VJ_API_ID,
     api_hash=Config.TECH_VJ_API_HASH,
-    plugins=plugins
+    plugins=dict(root="plugins_bot2")
 )
-
 # Async main to run both bots
 async def main():
     await bot1.start()
